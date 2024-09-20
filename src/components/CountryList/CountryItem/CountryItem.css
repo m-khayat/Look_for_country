@@ -1,0 +1,50 @@
+.country {
+  margin: 1rem;
+  width: calc(100% / 5);
+  height: 22rem;
+  background-color: var(--secondary);
+  border-radius: 0.5rem;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 50%;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.inf {
+  height: 50%;
+  margin: 1rem;
+  padding: 0;
+  color: var(--fontColor);
+}
+
+h6 {
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+span {
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 992px) {
+  .country {
+    width: calc(100% / 4);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .country {
+    width: calc(100% / 3);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .country {
+    width: 100%;
+  }
+}

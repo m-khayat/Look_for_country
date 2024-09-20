@@ -1,0 +1,28 @@
+nav {
+  margin: 0;
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--secondary);
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+  width: auto;
+}
+
+p {
+  color: var(--fontColor);
+  font-size: larger;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+button {
+  margin: 20px;
+  padding: 0;
+  border: none;
+  background-color: var(--secondary);
+  color: var(--fontColor);
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+}

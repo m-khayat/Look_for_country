@@ -1,0 +1,4 @@
+.appBody {
+  background-color: var(--primary);
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}

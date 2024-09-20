@@ -1,0 +1,84 @@
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 2rem 3rem;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+input {
+  border-radius: 0.3rem;
+  border: none;
+  background-color: var(--secondary);
+  padding: 1rem 4rem;
+  transition: margin ease-in 0.5s, background-color 250ms ease-in-out,
+    color 250ms ease-in-out;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0.5px 0px 5px 0px gray;
+  margin: 0.1rem 0;
+  color: var(--fontColor);
+}
+
+.selector {
+  background-color: var(--secondary);
+  color: var(--fontColor);
+  padding: 4px 0rem;
+  border-radius: 8px;
+  max-width: 300px;
+  margin: 0rem 0;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+.selector label {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.selector select {
+  background-color: var(--primary);
+  color: var(--fontColor);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--secondary);
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  color: var(--fontColor);
+}
+
+.selector select:hover {
+  background-color: var(--secondary);
+}
+
+.selector select:focus {
+  border-color: hsl(209, 23%, 42%);
+}
+
+.selector option {
+  background-color: var(--primary);
+  color: var(--fontColor);
+}
+
+@media (max-width: 666px) {
+  .input {
+    width: -webkit-fill-available;
+    padding: 1rem;
+  }
+  .inputs {
+    flex-direction: column;
+  }
+  .selector {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 344px) {
+  .selector {
+    margin-top: 2rem;
+    font-size: xxx-small;
+  }
+}
